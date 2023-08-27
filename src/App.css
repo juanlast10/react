@@ -1,0 +1,41 @@
+.container {
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.container__title {
+    text-shadow: 0.15em 0.15em #999;
+    font-size: 2rem;
+}
+
+.container__phrase {
+    width: 100%;
+    max-width: 30em;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5em 2em;
+    line-height: 1.4;
+    border-radius: 0.7em;
+}
+
+.container__btn {
+    padding: 0.8em 1.2em;
+    border-radius: 0.7em;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 200ms ease,
+                transform 200ms ease,
+                box-shadow 200ms ease;
+}
+
+.container__btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 0.8em #0005;
+}
